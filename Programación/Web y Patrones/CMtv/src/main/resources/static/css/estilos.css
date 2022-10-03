@@ -1,0 +1,84 @@
+/* hoja de estilos de la clase 2 web y patrones */
+
+/* id... #xxxx */
+
+#encabezado{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 8%;
+    width: 100%;
+    background-color: blue;
+    color: white;
+}
+
+#encabezado h1{
+    display: inline;
+    text-align: center;
+}
+
+#menu{
+    position: absolute;
+    top: 8%;
+    left: 0;
+    height: 4%;
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+
+#menu a{
+    background-color: red;
+    color: black;
+}
+
+#menu a:hover{
+    background-color: green;
+    color: white;
+}
+
+#barraLateral{
+    position: absolute;
+    top: 12%;
+    left: 0;
+    height: 84%;
+    width: 19%;
+    background-color: #87B0B0;
+    padding: 10px;
+}
+
+#contenido{
+    position: absolute;
+    top: 12%;
+    left: 19%;
+    height: 84%;
+    width: 81%;
+    background-color: whitesmoke;
+    padding: 10px ;
+    overflow: auto;
+}
+
+#pieDePagina{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 4%;
+    width: 100%;
+    background-color: #0B6666;
+    text-align: center;
+}
+
+#encabezadoTabla{
+    background-color: blue;
+    color: white;
+}
+
+#tablaResumen tr:nth-child(odd){
+    background-color: coral;
+    color: blue;
+}
+
+#tablaResumen tr:nth-child(even){
+    background-color: white;
+    color: red;
+}

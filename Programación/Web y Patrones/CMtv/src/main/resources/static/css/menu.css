@@ -72,3 +72,14 @@ body{
     background-color: #FF6C17;
     transition: 0.5s;
 }
+
+.next-menu-link:hover{
+    background-color: #FF6C17;
+    transition: 0.5s;
+}
+
+.next-menu-link{
+    color: #0B6666;
+    padding: 8px 12px;
+    border-radius: 4px;
+}

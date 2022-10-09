@@ -68,11 +68,6 @@
     text-align: center;
 }
 
-#encabezadoTabla{
-    background-color: blue;
-    color: white;
-}
-
 #tablaResumen tr:nth-child(odd){
     background-color: coral;
     color: blue;

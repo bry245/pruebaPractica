@@ -1,6 +1,9 @@
 <!DOCTYPE html>
-<!-- Se actualiza la página index para que contenga nuevas etiquetas meta y demás etiquetas para la semántica del body -->
-<html lang="es">
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
     <head>
         <title>CMtv</title>
         <meta charset="UTF-8">
@@ -8,8 +11,8 @@
         <meta name="keywords" content="html5, css3, web, fidélitas, CMtv">
         <link href="css/estilos.css" rel="stylesheet" type="text/css"/>
         <link rel="stylesheet" href="css/menu.css" type="text/css">
-
     </head>
+
     <body>
         <header class="header"> <!-- En lugar de CSS se utilizan clases -->
             <nav class="nav"> <!-- En lugar de CSS se utilizan clases -->
@@ -30,28 +33,45 @@
             <br>
             <a class="images" href="station.html"><img style="padding-left: 8px" src="images/station.jpg" alt="Serie 'Station 19'" width="230" height="130"/></a>
         </aside>
-
+        <br>
+        <br>
         <section id="contenido"><!-- Etiqueta como si fuera el cuerpo de la página --> 
-            
-           <article>
-                <header><h3>Station 19 Season 6 First Look Preview</h3></header>
-                <br>
-                <iframe 
-                    width="1080" 
-                    height="460" 
-                    src="https://www.youtube.com/embed/PpyuHUf3_oE" 
-                    title="YouTube video player" 
-                    frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                    allowfullscreen>
-                </iframe>
-                <footer>Primer Vistazo</footer>
+            <article>
+                <header><h1>Películas</h1></header>
+                <table border="0">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <a class="images" href="joker.html"><img src="images/joker.jpg" alt="Pelicula 'joker'" width="250" height="250"/></a>
+                            </td>
+                            <td>
+                                <img src="images/spider.jpg" alt="Pelicula 'Arrow'" width="250" height="250"/>
+                            </td>
+                            <td>
+                                <img src="images/SvrB.jpg" alt="Pelicula 'Greys'" width="250" height="250"/>
+                            </td>
+                            <td>
+                                <img src="images/OUaTHolly.jpg" alt="Pelicula 'LoT'" width="250" height="250"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a class="images" href="moon.html"><img src="images/moon.jpg" alt="Pelicula 'LoT'" width="250" height="250"/></a>
+                            </td>
+                            <td>
+                                <img src="images/iron man.jpg" alt="Pelicula 'LoT'" width="250" height="250"/>
+                            </td>
+                            <td>
+                                <img src="images/xmen.jpg" alt="Pelicula 'station'" width="250" height="250"/>
+                            </td>
+                            <td>
+                                <img src="images/shang shi.jpg" alt="Pelicula 'supergirl'" width="250" height="250"/>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
             </article>
         </section>
-
-        <br>
-        <br>
-
         <footer id="pieDePagina">Derechos reservados &COPY; 2022 <address style="display: inline">Costa Rica</address></footer>
     </body>
 </html>

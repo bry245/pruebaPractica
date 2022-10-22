@@ -1,0 +1,31 @@
+/*DROP SCHEMA practica;
+DROP USER usuario_practica;*/
+
+CREATE SCHEMA `practica`;
+
+CREATE TABLE `practica`.`estado` (
+`id_pais` INT NOT NULL AUTO_INCREMENT, 
+`nombre` VARCHAR(30) NOT NULL,
+`capital` VARCHAR(50) NOT NULL,
+`idioma` VARCHAR(50) NULL, 
+`poblacion` long NULL, 
+`continente` VARCHAR(15) NULL, 
+PRIMARY KEY (`id_pais`))
+ENGINE = innoDB
+DEFAULT CHARACTER SET = utf8mb4
+COLLATE = utf8mb4_eo_0900_ai_ci;
+
+/*Insertar 3 registros*/
+INSERT INTO `practica`.`estado` (`nombre`, `capital`, `idioma`, `poblacion`, `continente`)
+	VALUES ('Bután', 'Timbu', 'Dzongkha', '753.000', 'Asia');
+INSERT INTO `practica`.`estado` (`nombre`, `capital`, `idioma`, `poblacion`, `continente`)
+	VALUES ('Madagascar', 'Timbu', 'Dzongkha', '28.427.333', 'África');
+INSERT INTO `practica`.`estado` (`nombre`, `capital`, `idioma`, `poblacion`, `continente`)
+	VALUES ('Omán', 'Antananarivo', 'Malgache y francés', '4.527.000', 'Asia');
+
+/* Crear un usuario */
+CREATE USER 'usuario_practica' @'%' IDENTIFIED BY 'la_Clave.';
+
+/* Se asignan los priviliegios */
+GRANT ALL PRIVILEGES ON techshop.* to 'usuario_practica';
+flush privileges;

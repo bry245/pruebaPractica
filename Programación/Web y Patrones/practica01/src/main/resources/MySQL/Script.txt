@@ -7,13 +7,12 @@ CREATE TABLE `practica`.`estado` (
 `id_pais` INT NOT NULL AUTO_INCREMENT, 
 `nombre` VARCHAR(30) NOT NULL,
 `capital` VARCHAR(50) NOT NULL,
-`idioma` VARCHAR(50) NULL, 
-`poblacion` long NULL, 
-`continente` VARCHAR(15) NULL, 
+`idioma` VARCHAR(50) NOT NULL, 
+`poblacion` VARCHAR(150) NOT NULL, 
+`continente` VARCHAR(50) NOT NULL, 
 PRIMARY KEY (`id_pais`))
 ENGINE = innoDB
-DEFAULT CHARACTER SET = utf8mb4
-COLLATE = utf8mb4_eo_0900_ai_ci;
+DEFAULT CHARACTER SET = utf8mb4;
 
 /*Insertar 3 registros*/
 INSERT INTO `practica`.`estado` (`nombre`, `capital`, `idioma`, `poblacion`, `continente`)
@@ -27,5 +26,5 @@ INSERT INTO `practica`.`estado` (`nombre`, `capital`, `idioma`, `poblacion`, `co
 CREATE USER 'usuario_practica' @'%' IDENTIFIED BY 'la_Clave.';
 
 /* Se asignan los priviliegios */
-GRANT ALL PRIVILEGES ON techshop.* to 'usuario_practica';
+GRANT ALL PRIVILEGES ON practica.* to 'usuario_practica';
 flush privileges;

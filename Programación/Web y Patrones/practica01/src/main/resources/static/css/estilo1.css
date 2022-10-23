@@ -1,9 +1,54 @@
-/* 
-    Created on : 22 oct. 2022, 11:17:20
-    Author     : melan
-*/
-
 *{
     font-family: sans-serif;
     color: whitesmoke;
+}
+
+#encabezado{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 8%;
+    width: 100%;
+    background-color: blue;
+    color: white;
+}
+
+#encabezado h1{
+    display: inline;
+    text-align: center;
+    color: red;
+    
+}
+
+#menu a{
+    background-color: red;
+    color: black;
+    text-decoration: none;
+}
+
+#menu a:hover{
+    background-color: green;
+    color: white;
+    text-decoration: none;
+}
+
+#contenido{
+    position: absolute;
+    top: 12%;
+    left: 19%;
+    height: 81%;
+    width: 80%;
+    background-color: #7901A0;
+    padding: 10px ;
+    overflow: auto;
+}
+
+#pieDePagina{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 4%;
+    width: 100%;
+    background-color: #AABB00;
+    text-align: center;
 }

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+    <head>
+        <title>Paises</title>
+        <meta charset="UTF-8">
+        <link href="css/estilo1.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <header th:replace="layout/plantilla :: header"/>
+        <h2>Listado de paises poco conocidos</h2>
+        <nav>
+            <a th:href="@{/nuevoPais}">Nuevo País</a>
+        </nav>
+        <section>
+            <div th:if = "${paises != null and !paises.empty}">
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>Nombre:</th>
+                            <th>Capital:</th>
+                            <th>Idioma:</th>
+                            <th>Continente:</th>
+                            <th>Población:</th>
+                            <th>Eliminar</th>
+                            <th>Modificar</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr th:each="pais : ${paises}">
+                            <td th:text="${pais.nombre}"></td>
+                            <td th:text="${pais.capital}"></td>
+                            <td th:text="${pais.idioma}"></td>
+                            <td th:text="${pais.poblacion}"></td>
+                            <td th:text="${pais.continente}"></td>
+                            <td><a th:href="@{/eliminarPais/} + ${pais.idPais}">Eliminar</a></td>
+                            <td><a th:href="@{/modificarPais/} + ${pais.idPais}">Modificar</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div th:if="${paises == null or paises.empty}">
+                La lista esta vacía
+            </div>
+        </section>
+        <footer th:replace="layout/plantilla :: footer" />
+    </body>
+</html>

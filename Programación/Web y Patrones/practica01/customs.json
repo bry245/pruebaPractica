@@ -1,0 +1,10 @@
+{
+    "elements": {},
+    "attributes": {
+        "th:action": {},
+        "th:replace": {},
+        "th:href": {},
+        "th:field": {},
+        "th:fragment": {}
+    }
+}
